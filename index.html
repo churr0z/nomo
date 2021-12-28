@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomo</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/firstPage.css">
+
+    <!--google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+    <!-- Firebase 8 CDNs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
+    <!-- Link to the api keys for your firebase project -->
+    <script src="/js/firebaseAPI.js"></script>
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="navbar">
+            <div class="name"><a class="logo" href="">nomo</a> </div>
+            <div class="login">
+                <a href="#"> <span class="material-icons-round t1" id="new" onclick="showDropdown()">
+                        person
+                    </span></a>
+            </div>
+            <div id="profileDropDown" style="display: none">
+                <a href="profile.html"><button id="dropDownViewProfile"> View Profile</button></a>
+                <a href="loginPage.html"><button id="dropDownLogout"> Logout </button></a>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="text t2">
+                Effective replies for any situation, making declining stress-free
+            </div>
+            <div class="text t3">
+                What type of response do you need today?
+            </div>
+            <div class="buttons">
+                <a class="b1" href="secondPageTest.html?personal" onclick="personalSelected()"> Personal
+                </a>
+                <a class="b2" href="secondPageTest.html?business" onclick="businessSelected()"> Business
+                </a>
+            </div>
+
+            <div id="extraspace"></div>
+
+        </div>
+
+        <footer>
+            <div class="bottomicons">
+                <a href="https://github.com/dennisdkim/goodTeamWinter2021" target="blank" class="bottomicons">
+                    <span class="material-icons-outlined">
+                        info
+                        </span>
+                </a>
+                <a href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ" target="blank" class="bottomicons">
+                    <span class="material-icons-outlined">
+                    groups
+                    </span>
+                </a>
+            </div>
+
+            <p> nomo © 2021</p>
+        </footer>
+    </div>
+
+    <script src="/js/firstPage.js"></script>
+</body>
+
+
+</html>
